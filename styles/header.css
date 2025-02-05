@@ -21,12 +21,11 @@
     color: #fff;
     display: flex;
     align-items: center;
+    flex-grow: 1; 
 }
 
 .logo-text { margin: 0 5px; }
-.logo-purse { color: #B22222; } 
 .logo-gallery { color: #8B0000; }
-
 
 .navbar ul {
     display: flex;
@@ -65,6 +64,11 @@
 }
 
 @media (max-width: 768px) {
+    .header-container {
+        justify-content: space-between; 
+        align-items: center;
+    }
+
     .navbar ul {
         display: none;
         flex-direction: column;
@@ -84,42 +88,21 @@
     .burger {
         display: flex;
     }
-}
 
-.luxury-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: #8B0000; 
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-}
-
-.logo-text {
-    margin: 0 5px;
-}
-
-.logo-purse {
-    color: #B22222; 
-}
-
-.logo-gallery {
-    color: #8B0000;
+    .luxury-logo {
+        font-size: 24px; 
+    }
 }
 
 @media (max-width: 480px) {
     .header-container {
-        flex-direction: column;
+        flex-direction: row; 
         align-items: center;
     }
 
     .luxury-logo {
-        text-align: center;
-        font-size: 16px;
-        letter-spacing: 3px;
+        font-size: 20px; 
+        letter-spacing: 2px;
     }
 
     .navbar ul {
