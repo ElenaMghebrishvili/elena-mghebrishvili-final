@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header">
+                <div class="luxury-logo">
+                    <span class="logo-text">The</span>
+                    <span class="logo-text logo-purse">Purse</span>
+                    <span class="logo-text logo-gallery">Gallery</span>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="my-cart.html">Cart</a></li>
+                    <li><a href="profile.html" class="active">Profile</a></li>
+                </ul>
+                <div class="burger" id="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="profile">
+        <h2>User Profile</h2>
+        <div id="profile-details">
+            <p>Name: <span id="username">Elena Mghebrishvili</span></p>
+            <p>Email: <span id="email">elena.mghebrishvili.1@btu.edu.ge</span></p>
+            <button id="edit-profile-btn" class="edit-profile-btn">Edit Profile</button>
+        </div>
+    
+      
+        <form id="edit-profile-form" class="edit-profile-form" style="display:none;">
+            <label for="edit-name">Name:</label>
+            <input type="text" id="edit-name" name="name" value="Elena Mghebrishvili">
+            
+            <label for="edit-email">Email:</label>
+            <input type="email" id="edit-email" name="email" value="elena.mghebrishvili.1@btu.edu.ge">
+            
+            <label for="edit-password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="edit-password" name="password" placeholder="New password">
+                <i id="eye-icon" class="fas fa-eye" onclick="togglePassword()"></i>
+            </div>
+    
+            <button type="submit">Save Changes</button>
+            <button type="button" id="cancel-edit">Cancel</button>
+        </form>
+    </section>
+
+
+<div id="popup-modal" class="popup-modal">
+    <div class="popup-content">
+        <span id="close-popup" class="close-popup">&times;</span>
+        <h3>Profile Updated!</h3>
+        <p>Your profile has been updated successfully.</p>
+        <button id="close-popup-btn">Close</button>
+    </div>
+</div>
+
+
+
+<section id="special-offers">
+    <h3>Special Offers</h3>
+    <div class="offers-container">
+        <div class="offer">
+            <img src="images/sales.avif" alt="Special Offer 1">
+            <h4>50% Off on Select Bags</h4>
+            <p>Shop now and save 50% on selected items!</p>
+            <a href="#products" class="offer-btn">Shop Now</a>
+        </div>
+        <div class="offer">
+            <img src="images/black-friday.jpg" alt="Special Offer 2">
+            <h4>New Collection Launch</h4>
+            <p>Explore our latest bags collection for this season.</p>
+            <a href="#products" class="offer-btn">Discover Now</a>
+        </div>
+    </div>
+</section>
+
+
+    
+    <footer class="footer">
+        <p>&copy; 2025 Bags Shop | Designed with ❤️</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

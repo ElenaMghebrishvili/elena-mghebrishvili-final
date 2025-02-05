@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bags Shop</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="luxury-logo">
+                <span class="logo-text">The</span>
+                <span class="logo-text logo-purse">Purse</span>
+                <span class="logo-text logo-gallery">Gallery</span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="my-cart.html">Cart</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+                <div class="burger" id="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="general-description">
+        <div class="general-description-container">
+            <h2>Welcome to The Purse Gallery</h2>
+            <p>Discover a curated collection of high-end bags designed to complement every style and occasion. Whether you're looking for something casual, elegant, or bold, our range has something just for you. Explore our collection and find the perfect match to elevate your look.</p>
+            <a href="#products" class="shop-now-btn">Shop Now</a>
+        </div>
+    </section>
+
+
+
+    <section id="products">
+        <div class="products-container">
+            <h2>Our Products</h2>
+            <div class="products"></div>
+            <div class="pagination">
+                <button id="prevBtn">&larr; Previous</button>
+                <button id="nextBtn">Next &rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="about-us-container">
+            <h2>About Us</h2>
+            <p>We provide high-quality bags for every occasion at affordable prices.</p>
+            <button class="learn-more-btn">Learn More</button>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <div class="contact-us-container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+
+
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p id="popupMessage"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Bags Shop | Designed with ❤️</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/add-cart.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/active-link.js"></script>
+    <script src="js/scroll-top.js"></script>
+
+</body>
+</html>

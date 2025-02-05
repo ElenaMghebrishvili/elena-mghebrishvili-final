@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 80px; 
+    flex-grow: 1;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #8B0000;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.profile-info {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.profile-info p {
+    margin: 10px 0;
+}
+
+.profile-info strong {
+    color: #333;
+}
+
+.edit-profile-btn {
+    background-color: #8B0000;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.edit-profile-btn:hover {
+    background-color: #B22222;
+}
+
+.edit-profile-form {
+    margin-top: 20px;
+}
+
+.edit-profile-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.edit-profile-form button {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-form button:hover {
+    background-color: #B22222;
+}
+
+#cancel-edit {
+    background-color: #ccc;
+    margin-left: 10px;
+}
+
+#cancel-edit:hover {
+    background-color: #aaa;
+}
+
+#special-offers {
+    font-family: 'Playfair Display', serif;
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#special-offers h3 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.offer {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 45%;
+    text-align: center;
+    padding: 20px;
+}
+
+.offer img {
+    width: 100%;  
+    height: 250px;  
+    object-fit: cover;  
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.offer:hover img {
+    transform: scale(1.1);
+}
+
+.offer h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #8B0000;
+    margin-top: 15px;
+}
+
+.offer p {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.offer-btn {
+    display: inline-block;
+    background-color: #8B0000;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.offer-btn:hover {
+    background-color: #8B0000;
+}
+
+.popup-modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close-popup {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.close-popup:hover,
+.close-popup:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#close-popup-btn {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+#close-popup-btn:hover {
+    background-color: #B22222;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; 
+    }
+
+    .profile-container {
+        padding: 20px; 
+    }
+
+    .profile-container h2 {
+        font-size: 2rem; 
+    }
+
+    .profile-info {
+        font-size: 1rem; 
+    }
+
+    #special-offers h3 {
+        font-size: 20px;
+    }
+
+    .offers-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+
+    .offer h4 {
+        font-size: 18px; 
+    }
+
+    .edit-profile-btn,
+    .edit-profile-form button,
+    #close-popup-btn {
+        font-size: 1rem; 
+        padding: 10px 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 10px; 
+    }
+
+    .offer img {
+        height: 200px; 
+    }
+
+    .offer-btn {
+        padding: 8px 15px;
+    }
+
+    .edit-profile-btn,
+    .edit-profile-form button,
+    #close-popup-btn {
+        width: 100%; 
+    }
+}

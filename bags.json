@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "name": "Tokyo leather shoulder bag",
+    "price": 149.49,
+    "description": "Black\nCalf leather\nCotton lining\nGold-tone hardware\nLogo stamp to the front\nMagnetic fastening\nAdjustable shoulder strap\nMain compartment",
+    "category": "Shoulder Bag",
+    "stock": 5,
+    "image": "https://cdn-images.farfetch-contents.com/19/78/98/38/19789838_50498628_1000.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Bucket Swipe mini bag",
+    "price": 349.99,
+    "description": "Dark red\nCalf leather\nGrained texture\nOpen top\nCarabiner fastening\nTwo flat top handles\nLogo stamp to the front\nMain compartment\nInternal patch pocket\nFull lining\nThis piece comes complete with a protective dust bag.",
+    "category": "mini bag",
+    "stock": 20,
+    "image": "https://cdn-images.farfetch-contents.com/25/74/52/71/25745271_55753551_1000.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Le Bisou Perle shoulder bag",
+    "price": 249.99,
+    "description": "A highlight of the label’s SS23 Le Raphia show in Paris, this Le Bisou Perle shoulder bag demonstrates Jacquemus’ inventive aesthetic. Crafted from supple leather to a curved silhouette, it’s characterised by oversized bead detailing that adorns the shoulder strap.",
+    "category": "shoulder bag",
+    "stock": 20,
+    "image": "https://cdn-images.farfetch-contents.com/19/66/25/35/19662535_44131274_1000.jpg"
+  },
+  {
+    "id": "4",
+    "name": "crocodile-embossed shoulder bag",
+    "price": 329.49,
+    "description": "This brown BY FAR Rachel leather shoulder bag features a mock croc texture and has been shaped to a slim silhouette. It has silver tone hardware, a top zip opening and a detachable shoulder strap. Let us introduce you to your newest best friend, Rachel. She’s BY FAR your favourite companion.",
+    "category": "Shoulder Bag",
+    "stock": 5,
+    "image": "https://cdn-images.farfetch-contents.com/19/55/49/55/19554955_43619863_1000.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Xs Le Pliage Xtra Pouch leather tote bag",
+    "price": 110.00,
+    "description": "Black\nRecycled polyamide\nLeather\nGold-tone hardware\nTwo rolled top handles\nFoldover top\nSnap-lock closure\nTop zip fastening",
+    "category": "mini bag",
+    "stock": 5,
+    "image": "https://cdn-images.farfetch-contents.com/13/53/02/78/13530278_55966872_1000.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Tokyo leather shoulder bag",
+    "price": 149.49,
+    "description": "Grey\nLeather\nBranded zip puller\nSingle top handle\nEmbossed logo to the front\nFoldover top with press-stud fastening\nMain compartment\nLogo-jacquard lining\nInternal card slots",
+    "category": "mini bag",
+    "stock": 5,
+    "image": "https://cdn-images.farfetch-contents.com/23/52/78/48/23527848_53587758_1000.jpg"
+  },
+  {
+    "id": "7",
+    "name": "large canvas tote bag",
+    "price": 119.99,
+    "description": "Light beige/Caramel brown\nLinen/Leather\nAppliqué logo\nKeyring attachment\nTwo rolled top handles\nOpen top\nMain compartment\nInternal zip-fastening pocket\nInternal logo patch",
+    "category": "tote bag",
+    "stock": 5,
+    "image": "https://cdn-images.farfetch-contents.com/23/24/46/53/23244653_53295959_1000.jpg"
+  },
+  {
+    "id": "8",
+    "name": "medium Belt Cabas tote bag",
+    "price": 219.99,
+    "description": "Bordeaux red\nCalf leather\nSmooth grain\nLobster claw fastening\nTwo adjustable top handles\nFolded edge\nLogo stamp to the front\nMain compartment\nRemovable pouch\nSuede lining",
+    "category": "tote bag",
+    "stock": 5,
+    "image": "https://cdn-images.farfetch-contents.com/25/50/03/81/25500381_55656172_1000.jpg"
+  },
+  {
+    "id": "9",
+    "name": "small Cannolo shoulder bag",
+    "price": 169.99,
+    "description": "Black\nWoven raffia design\nFoldover top with magnetic fastening\nAdjustable shoulder strap\nLeather trim\nGold-tone logo plaque\nMain compartment\nDebossed internal logo\nInternal card slot\nThis piece comes complete with a protective dust bag.",
+    "category": "mini bag",
+    "stock": 5,
+    "image": "https://cdn-images.farfetch-contents.com/26/57/50/00/26575000_56279747_1000.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Flow tote bag",
+    "price": 119.99,
+    "description": "Dark grey\nFaux leather\nGrained texture\nTonal stitching\nSignature Arch buckle\nDebossed logo to the rear\nFoldover top\nSingle flat top handle\nAdjustable detachable shoulder strap\nMain compartment\nInternal patch pocket\nPale gold-tone hardware",
+    "category": "tote bag",
+    "stock": 5,
+    "image": "https://cdn-images.farfetch-contents.com/24/15/10/75/24151075_54351482_1000.jpg"
+  }
+]

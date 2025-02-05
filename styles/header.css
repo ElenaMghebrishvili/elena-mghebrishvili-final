@@ -1,0 +1,132 @@
+.header-container {
+    background: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+.luxury-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logo-text { margin: 0 5px; }
+.logo-purse { color: #B22222; } 
+.logo-gallery { color: #8B0000; }
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: #B22222;
+    border-radius: 5px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger .line {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(51, 51, 51, 0.9);
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+.luxury-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #8B0000; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo-text {
+    margin: 0 5px;
+}
+
+.logo-purse {
+    color: #B22222; 
+}
+
+.logo-gallery {
+    color: #8B0000;
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .luxury-logo {
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .navbar a {
+        font-size: 16px; 
+    }
+}
