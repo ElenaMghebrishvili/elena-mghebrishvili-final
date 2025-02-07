@@ -1,0 +1,2 @@
+# Online bag store website
+This is a responsive Online bag store website designed to showcase the features of a modern, elegant, and user-friendly online platform. It includes various functionalities such as a burger menu, form validation, responsive design, and more. The website is optimized for mobile and desktop devices and integrates with JavaScript for dynamic content handling and improved user experience.
