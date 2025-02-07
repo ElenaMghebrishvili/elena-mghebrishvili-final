@@ -66,6 +66,9 @@ prevBtn.addEventListener('click', () => {
   }
 });
 
+
+
+
 nextBtn.addEventListener('click', () => {
   if (currentPage < Math.ceil(allProducts.length / itemsPerPage) - 1) {
     currentPage++;
@@ -105,11 +108,47 @@ function showPopup(message) {
   }, 3000); 
 }
 
-//კონტაქტის ფორმა
-document.getElementById('contactForm').addEventListener('submit', (e) => {
+
+
+
+
+document.getElementById('contactForm').addEventListener("submit", (e) => {
   e.preventDefault();  
-  showPopup("Thank you for your message! We will get back to you shortly.");
+
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const emailError = document.getElementById("email-error");
+  const messageError = document.getElementById("message-error");
+
+  let isValid = true;
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email === "") {
+      emailError.textContent = "Email is required!";
+      isValid = false;
+  } else if (!emailRegex.test(email)) {
+      emailError.textContent = "Please enter a valid email address!";
+      isValid = false;
+  } else {
+      emailError.textContent = ""; 
+  }
+
+  if (message === "") {
+      messageError.textContent = "Message is required!";
+      isValid = false;
+  } else {
+      messageError.textContent = "";  
+  }
+
+  if (isValid) {
+        alert('comment is send succsesfully')
+      document.getElementById('contactForm').submit();
+  }
 });
+
+
+
 
 
 //ელემენტის განახლება ეკრანის ზომის მიხედვით

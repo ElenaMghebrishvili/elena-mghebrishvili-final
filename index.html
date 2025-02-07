@@ -70,13 +70,18 @@
             <h2>Contact Us</h2>
             <form id="contactForm">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
+                <div id="email-error" class="error-message"></div>
+                
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message"></textarea>
+                <div id="message-error" class="error-message"></div>
+                
                 <button type="submit">Submit</button>
             </form>
         </div>
     </section>
+    
 
     <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
 
@@ -88,6 +93,13 @@
         </div>
     </div>
 
+    <div id="cookie-banner">
+        <span>We use cookies to improve your experience. <b>Accept all cookies</b></span>
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
+
+
+
     <footer class="footer">
         <p>&copy; 2025 Bags Shop | Designed with ❤️</p>
     </footer>
@@ -98,6 +110,7 @@
     <script src="js/search.js"></script>
     <script src="js/active-link.js"></script>
     <script src="js/scroll-top.js"></script>
+    <script src="js/cookies.js"></script>
 
 </body>
 </html>
